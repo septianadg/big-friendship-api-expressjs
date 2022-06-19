@@ -116,7 +116,7 @@ export const getRequest = async(req, res) => {
     }]
   });
 
-  if (!user) {
+  if (!requests) {
     return res.status(404).json({
       status: 'error',
       message: 'request not found'
