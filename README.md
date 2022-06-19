@@ -3,6 +3,8 @@ test backend dev benua integrasi global a/n septian
 
 # API ENDPOINT TESTER================================================
 
+Note : heroku free mode (kadang delay time dan time out saat coba endpoint), harap bisa dicoba lagi saat timeout, terima kasih
+
 | Method        | Endpoint                                                         | Description                | Authorization | Body (JSON                                                                                                   |
 | ------------- |:----------------------------------------------------------------:| --------------------------:| -------------:|-------------------------------------------------------------------------------------------------------------:|
 | POST          | https://big-friendship-api-expressjs.herokuapp.com/users         | User register              |               |{"username" : "","fullname" : "","gender" : "","email" : "","phone" : "","password" : "","confPassword" : ""} |
