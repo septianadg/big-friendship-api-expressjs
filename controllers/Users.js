@@ -118,7 +118,7 @@ export const Login = async(req, res) => {
         const fullname = user[0].fullname;
         const email = user[0].email;
         const accessToken = jwt.sign({userId, fullname, email}, process.env.ACCESS_TOKEN_SECRET,{
-            expiresIn: '300s'
+            expiresIn: '3000s'
         });
         const refreshToken = jwt.sign({userId, fullname, email}, process.env.REFRESH_TOKEN_SECRET,{
             expiresIn: '1d'
