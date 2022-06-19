@@ -15,7 +15,7 @@ app.use(router);
  
 //app.listen(process.env.HOST_PORT || 5000, ()=> console.log('Server running at port 5000'));
 
-var port = process.env.HOST_PORT || 3000;
-app.listen(port, "0.0.0.0", function() {
-console.log("Listening on Port 3000");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
